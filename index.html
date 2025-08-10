@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOD Podcast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>MOOD</h1>
+        <nav>
+            <ul>
+                <li><button class="toggle-section" data-target="mood-responde">MOOD Responde</button></li>
+                <li><button class="toggle-section" data-target="buzon">El Buzón de lo que nunca dije</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="mood-responde" class="hidden">
+        <h2>🎤 MOOD RESPONDE</h2>
+        <p>Envía tu pregunta y deja que el equipo MOOD la responda en el podcast con su toque único.</p>
+        <form>
+            <textarea placeholder="💬 Escribe tu pregunta aquí..."></textarea>
+            <label>Elige el tono de respuesta:</label>
+            <select>
+                <option>Seria</option>
+                <option>Graciosa</option>
+                <option>Reflexiva</option>
+                <option>MOOD total</option>
+            </select>
+            <label><input type="checkbox"> Permito que lo lean de forma anónima</label>
+            <button type="submit">Enviar Anónimamente</button>
+        </form>
+    </section>
+
+    <section id="buzon" class="hidden">
+        <h2>📮 EL BUZÓN DE LO QUE NUNCA DIJE</h2>
+        <p>Comparte tu historia, secreto o momento incómodo de forma anónima. Nosotros la leeremos o actuaremos.</p>
+        <form>
+            <textarea placeholder="Cuéntanos tu historia..."></textarea>
+            <label>Categoría:</label>
+            <select>
+                <option>Amor y crush imposibles</option>
+                <option>Momentos incómodos</option>
+                <option>Cosas absurdas</option>
+                <option>Secretos raros</option>
+                <option>Cosas que aún no entiendo</option>
+                <option>Otros</option>
+            </select>
+            <label>Elige 3 emojis que representen tu historia:</label>
+            <input type="text" placeholder="🙂🔥😳">
+            <button type="submit">Enviar Anónimamente</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 MOOD Podcast</p>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/moodns_pe/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968776.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@moodns_pe?lang=es" target="_blank">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="TikTok">
+            </a>
+            <a href="https://kick.com/moodns" target="_blank">
+                <img src="https://i.pinimg.com/736x/f6/4f/56/f64f5611aabc03a17fa0a1ddfc7d0490.jpg" alt="Kick">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
